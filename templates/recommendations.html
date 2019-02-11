@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendation Demo</title>
+</head>
+
+<b>User Info</b><br>
+{{ user_info|safe }}
+<br>
+<br>
+<b>Jobs which users similar to you applied</b><br>
+{{ recommendations_by_similar_users|safe }}
+<br>
+<br>
+<b>Jobs similar to what you applied in the past</b><br>
+{{ recommendations_by_similar_jobs|safe }}
+<br>
+<br>
+<b>Application history</b><br>
+{{ app_history|safe }}
+
+</body>
+</html>

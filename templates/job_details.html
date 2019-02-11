@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendation Demo</title>
+</head>
+<body>
+
+<h2>Job ID {{ job.JobID.values[0] }}</h2><br>
+{{ job[['JobID', 'City', 'State', 'Country']].to_html(classes='data')|safe }}<br>
+<br>
+<br>
+<h2>{{ job.Title.values[0]|safe }}</h2><br>
+<br>
+<br>
+<h3>Description</h3><br>
+{{ job.Description.values[0]|safe }}
+<br>
+<br>
+<h3>Requirements</h3><br>
+{{ job.Requirements.values[0]|safe }}
+
+</body>
+</html>

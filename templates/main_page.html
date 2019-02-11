@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendation Demo</title>
+</head>
+
+
+<b>Sample Users</b><br>
+{{ sample_users|safe }}
+<br>
+<br>
+<b>Sample Jobs</b><br>
+{{ sample_jobs|safe }}
+<br>
+<br>
+
+<form action="/recommend" method="get">
+    Recommend jobs for user
+    <input type="text" name="user_id" placeholder="User ID, i.e. 554">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
