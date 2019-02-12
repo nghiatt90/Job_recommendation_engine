@@ -59,7 +59,7 @@ def show_all_history():
 
 
 @app.route('/job_details/<int:job_id>')
-def show_user_details(job_id):
+def show_job_details(job_id):
     def beautify_html(text):
         return re.sub(r'\\r\\n|\\r|\\n', '<br>', text)
 
